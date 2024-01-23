@@ -1,0 +1,151 @@
+
+/* MENU*/
+.nav-link {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    font-style: normal;
+    background-color: hsl(67, 89%, 55%) !important;
+    color: black;
+    display: inline-block; /* Ajusta el display para que estén en línea */
+    box-sizing: border-box; 
+}
+
+
+.nav.p-2 {
+    background-color: #DBF227;
+}
+
+.nav-link:hover {
+    color: hsl(113, 100%, 35%); /* Corregido el valor de color al formato HSL */
+
+}
+
+#icono1{
+    display: inline-block;
+}
+
+.m-2 {
+    white-space: pre-line;
+    font-size: 4.5em;
+}
+
+.inicio::before {
+    width: 100%;
+    background: url("../assets/pictures/homa3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
+footer {
+    width: 100%;
+    color: black; /* Cambia el color del texto a negro */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #DBF227;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+
+}
+
+footer .item {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .item p {
+    color: #000; /* Cambia el color del texto dentro de .item a negro */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Estilo para el contenedor de MENU y PLANES */
+.menu-plans {
+    display: flex;
+    justify-content: flex-start
+
+}
+
+/* Estilo para cada sección de MENU y PLANES */
+.item {
+    text-align: left;
+    margin-right: 20px; /* Ajusta el margen entre las secciones según tu preferencia */
+    
+}
+
+.item a {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin:none;
+}
+
+/* Estilo para los enlaces cuando se les pasa el mouse */
+.item a:hover {
+    color: hsl(113, 100%, 35%);
+}
+
+.newsletter {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.newsletter h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.subscribe-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding:2px;
+}
+
+.subscribe-input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.subscribe-button {
+    padding: 8px;
+    background-color: hsl(67, 89%, 55%);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.cards-servicios .card{
+    width:25%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color: transparent;    
+}
+.cards-servicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-rule-color:white;
+}
