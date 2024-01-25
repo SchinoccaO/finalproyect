@@ -1,4 +1,19 @@
+.body{
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000
+}
 
+.icon-container{ min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    
+.main{
+    background-color: #000;
+}
 /* MENU*/
 .nav-link {
     font-family: "Bebas Neue", sans-serif;
@@ -27,7 +42,12 @@
 
 .m-2 {
     white-space: pre-line;
-    font-size: 4.5em;
+    font-size: 9em;
+    transition: color 0.3s ease; /* Añade transición al cambio de color */
+    text-align: left; /* Alinea el texto al centro */
+    display: block; /* Asegura que ocupa todo el ancho disponible */
+    margin-top: 10px; /* Añade un poco de espacio arriba */
+    
 }
 
 .inicio::before {
@@ -100,34 +120,42 @@ footer .item p {
 }
 
 .newsletter {
-    max-width: 600px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .newsletter h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    justify-content: flex-start;
 }
 
 .newsletter h2 {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
 }
 
 .subscribe-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    padding:2px;
+    flex-direction: column;
+    padding:1px;
 }
 
 .subscribe-input {
     flex-grow: 1;
     padding: 5px;
     margin-right: 10px;
+    margin-bottom: 10px;
+
 }
 
+h6 {
+    margin-top: 10px;
+}
 .subscribe-button {
     padding: 8px;
     background-color: hsl(67, 89%, 55%);
@@ -135,17 +163,52 @@ footer .item p {
     border: none;
     cursor: pointer;
 }
-.cards-servicios .card{
-    width:25%;
+.cards-servicios .card {
+    width: 25%;
     padding: 10px;
     display: flex;
-    justify-content: center;
-    align-items: left;
-    background-color: transparent;    
+    flex-direction: column; /* Ajustado a column para que el texto aparezca debajo del ícono */
+    justify-content: space-between;
+    align-items: flex-start; /* Ajustado a flex-start para alinear el contenido a la izquierda */
+    background-color: transparent;
+    border: none; /* Quita los bordes */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al texto */
 }
+
+/* Otros estilos para el contenido de la tarjeta (ajustar según sea necesario) */
+.cards-servicios .card h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto h3 (título) */
+}
+
+.cards-servicios .card p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto del párrafo */
+}
+
+/* Otros estilos para la tarjeta según sea necesario */
+
 .cards-servicios{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     column-rule-color:white;
+}
+.saber-mas {
+    font-family: "Bebas Neue", sans-serif;
+    color: hsl(0, 0%, 0%);
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Añade transición al cambio de color */
+    text-align: center; /* Alinea el texto al centro */
+    display: block; /* Asegura que ocupa todo el ancho disponible */
+    margin-top: 10px; /* Añade un poco de espacio arriba */
+}
+
+/* Cambia el color al pasar el mouse por encima */
+.saber-mas:hover {
+    color: hsl(113, 100%, 35%);
+}
+/* Estilo para posicionar a la izquierda */
+.card .saber-mas {
+    text-align: left;
+    margin-top: 0; /* Elimina el espacio arriba si es necesario */
 }
