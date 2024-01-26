@@ -1,20 +1,31 @@
-.body{
+body{
     min-width: 250px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #000
+    background-color: #000 !important
+}
+header{
+    width: 100%;
 }
 
-.icon-container{ min-width: 100px;
+.icon-container {
+    min-width: 50px; /* Ajusta el ancho según tus necesidades */
     display: flex;
-    flex-wrap: wrap;
+    align-items: center; /* Alinea verticalmente el contenido del icon-container */
+    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
 }
+
+
+
+/* Resto de tus estilos para .nav-link, .nav.p-2, etc. */
 
     
 .main{
     background-color: #000;
 }
 /* MENU*/
+
+
 .nav-link {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 500;
@@ -22,22 +33,60 @@
     font-style: normal;
     background-color: hsl(67, 89%, 55%) !important;
     color: black;
-    display: inline-block; /* Ajusta el display para que estén en línea */
-    box-sizing: border-box; 
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+    align-items: center; /* Alinea verticalmente el contenido del nav-links */
 }
-
 
 .nav.p-2 {
     background-color: #DBF227;
 }
 
 .nav-link:hover {
-    color: hsl(113, 100%, 35%); /* Corregido el valor de color al formato HSL */
-
+    color: hsl(113, 100%, 35%);
 }
 
-#icono1{
+#icono1 {
     display: inline-block;
+
+}
+h1.m-2{
+    color: #d9e2d9;
+    text-shadow: 6px 6px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto h1 (título) */
+    
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h1.m-2 {
+    animation: mover 5s ease-in-out;
+    animation-delay: 0.5s; 
+}
+@keyframes moverDesdeIzquierda {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.effect {
+    animation: moverDesdeIzquierda 2s ease-in-out; /* Ajusta la duración y la función de temporización según tus preferencias */
+    animation-delay: 0.5s; /* Agrega un retraso de 0.5 segundos antes de que comience la animación */
 }
 
 .m-2 {
@@ -64,98 +113,77 @@
     left: 0;
     opacity: .5;
     z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+
 }
+figure::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Ajusta la altura del difuminado según tus preferencias */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
 footer {
     width: 100%;
-    color: black; /* Cambia el color del texto a negro */
+    color: black;
     padding: 10px;
     display: flex;
-    flex-direction: column;
     background-color: #DBF227;
+    flex-direction: row; /* Cambiado a dirección de fila */
+    justify-content: space-between; /* Alinea elementos a los extremos */
 }
 
-footer div {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-
-}
-
-footer .item {
-    display: flex;
-    flex-direction: column;
-}
-
-footer .item p {
-    color: #000; /* Cambia el color del texto dentro de .item a negro */
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-}
-
-/* Estilo para el contenedor de MENU y PLANES */
 .menu-plans {
     display: flex;
-    justify-content: flex-start
+    align-items: center; /* Alinea verticalmente al centro */
 
 }
 
-/* Estilo para cada sección de MENU y PLANES */
-.item {
+.menu-plans .item {
     text-align: left;
-    margin-right: 20px; /* Ajusta el margen entre las secciones según tu preferencia */
-    
+    margin-right: 20px;
 }
 
-.item a {
+.menu-plans .item a {
     font-size: 24px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    margin:none;
+    margin: none;
 }
 
-/* Estilo para los enlaces cuando se les pasa el mouse */
-.item a:hover {
+.menu-plans .item a:hover {
     color: hsl(113, 100%, 35%);
 }
 
 .newsletter {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center; /* Alinea verticalmente al centro */
+
+    
 }
 
-.newsletter h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    justify-content: flex-start;
-}
-
+.newsletter h3,
 .newsletter h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-
+    font-size: 1.5em;
+    margin-bottom: 5px;
 }
 
 .subscribe-box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding:1px;
+    align-items: flex-end;
+    padding: 1px;
 }
 
 .subscribe-input {
-    flex-grow: 1;
     padding: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
-
 }
 
-h6 {
-    margin-top: 10px;
-}
 .subscribe-button {
     padding: 8px;
     background-color: hsl(67, 89%, 55%);
@@ -163,6 +191,20 @@ h6 {
     border: none;
     cursor: pointer;
 }
+
+/* Estilo para la sección de atención al cliente */
+.atencioncliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Mueve el elemento al final del contenedor flex */
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
 .cards-servicios .card {
     width: 25%;
     padding: 10px;
@@ -178,10 +220,12 @@ h6 {
 /* Otros estilos para el contenido de la tarjeta (ajustar según sea necesario) */
 .cards-servicios .card h3 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto h3 (título) */
+    color: white;
 }
 
 .cards-servicios .card p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto del párrafo */
+    color: white;
 }
 
 /* Otros estilos para la tarjeta según sea necesario */
@@ -194,7 +238,7 @@ h6 {
 }
 .saber-mas {
     font-family: "Bebas Neue", sans-serif;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     font-size: 1.3em;
     cursor: pointer;
     transition: color 0.3s ease; /* Añade transición al cambio de color */
@@ -211,4 +255,76 @@ h6 {
 .card .saber-mas {
     text-align: left;
     margin-top: 0; /* Elimina el espacio arriba si es necesario */
+}
+
+
+
+/************************************************************************* section 2: clientes*****/
+
+
+
+
+/* Estilo para la sección de opiniones de clientes */
+
+.opiniones-clientes h1 {
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif !important;
+}
+
+/* Estilo para la primera opinión */
+.cliente {
+    color: white;
+    width: 45%; /* Ajusta el ancho según tus preferencias */
+    margin: 20px; /* Ajusta el margen según tus preferencias */
+    box-sizing: border-box;
+    float: left; /* Hace que el elemento flote a la izquierda */
+    font-style: italic
+}
+
+.cliente h3 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    
+}
+
+.cliente p {
+    color: white;
+    width: 100%; /* Ajusta el ancho según tus preferencias */
+    margin: 20px; /* Ajusta el margen según tus preferencias */
+    box-sizing: border-box;
+    float: left; /* Hace que el elemento flote a la izquierda */
+    font-style: italic;
+}
+
+/* Estilo para la segunda opinión */
+.cliente-izq {
+    color: rgb(255, 255, 255);
+    width: 45%; /* Ajusta el ancho según tus preferencias */
+    margin: 20px; /* Ajusta el margen según tus preferencias */
+    box-sizing: border-box;
+    float: right; /* Hace que el elemento flote a la derecha */
+    font-style: italic;
+}
+
+.cliente-izq h3 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.cliente-izq p {
+    color: white;
+    width: 100%; /* Ajusta el ancho según tus preferencias */
+    margin: 20px; /* Ajusta el margen según tus preferencias */
+    box-sizing: border-box;
+    float: right; /* Hace que el elemento flote a la derecha */
+    font-style: italic;
+}
+
+
+.cliente p,
+.cliente-izq p {
+    font-size: 1em; /* Tamaño del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas del párrafo */
+    margin: 0; /* Elimina el margen predeterminado para el párrafo */
 }
