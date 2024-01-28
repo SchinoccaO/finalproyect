@@ -1,0 +1,201 @@
+body{
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000 !important
+}
+header{
+    width: 100%;
+}
+.fa-heart-pulse {
+    color: black; /* Cambia "red" al color que desees */
+}
+
+.icon-container {
+    min-width: 50px; /* Ajusta el ancho según tus necesidades */
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido del icon-container */
+    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+/* carrito de compra*/
+.shopping {    
+    position: fixed; /* Establece la posición fija */
+    top: 4; /* Lo coloca en la parte superior de la página */
+    right: 20px; /* Lo coloca a 20px del borde derecho de la ventana */
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+.fa-cart-shopping{
+    color: black;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+
+/* Resto de tus estilos para .nav-link, .nav.p-2, etc. */
+
+    
+.main{
+    background-color: #000;
+}
+/* MENU*/
+
+
+.nav-link {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    font-style: normal;
+    background-color: hsl(67, 89%, 55%) !important;
+    color: black;
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+    align-items: center; /* Alinea verticalmente el contenido del nav-links */
+}
+
+.nav.p-2 {
+    background-color: #DBF227;
+}
+
+.nav-link:hover {
+    color: hsl(113, 100%, 35%);
+}
+
+#icono1 {
+    display: inline-block;
+}
+
+
+
+/* FOOTER*/
+footer {
+    width: 100%;
+    color: black;
+    padding: 5px;
+    display: flex;
+    background-color: #DBF227;
+    flex-direction: row; /* Cambiado a dirección de fila */
+    justify-content: space-between; /* Alinea elementos a los extremos */
+}
+
+.menu-plans {
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+
+}
+
+.menu-plans .item {
+    text-align: left;
+    margin-right: 20px;
+}
+
+.menu-plans .item a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: none;
+}
+
+.menu-plans .item a:hover {
+    color: hsl(113, 100%, 35%);
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; /* Alinea verticalmente al centro */
+
+    
+}
+
+.newsletter h3{
+    font-size: 1rem;
+    font-style: oblique;
+    text-align: left;
+
+.newsletter h2{
+    font-size: 1.5rem;
+    font-style: inherit;
+}
+.subscribe-box {
+    display: flex;
+    align-items: flex-end;
+    padding: 1px;
+}
+
+.subscribe-input {
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    padding: 8px;
+    background-color: hsl(67, 89%, 55%);
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para la sección de atención al cliente */
+
+.atencioncliente h6{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.atencioncliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* Mueve el elemento al final del contenedor flex */
+    text-align: center;
+    margin-top: auto;
+}
+
+
+footer {
+    position: relative;
+}
+
+.menu-plans, .newsletter, .atencioncliente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-plans {
+    left: 0;
+}
+
+.newsletter {
+    right: 0;
+}
+
+.atencioncliente {
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-plans, .newsletter, .atencioncliente {
+    flex: 1;
+    text-align: center;
+}
+
+.menu-plans {
+    text-align: left;
+}
+
+.atencioncliente {
+    text-align: right;
+}

@@ -7,6 +7,9 @@ body{
 header{
     width: 100%;
 }
+.fa-heart-pulse{
+    color: black;
+}
 
 .icon-container {
     min-width: 50px; /* Ajusta el ancho según tus necesidades */
@@ -15,7 +18,18 @@ header{
     margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
 }
 
-
+/* carrito de compra*/
+.shopping {    
+    position: fixed; /* Establece la posición fija */
+    top: 4; /* Lo coloca en la parte superior de la página */
+    right: 20px; /* Lo coloca a 20px del borde derecho de la ventana */
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+.fa-cart-shopping{
+    color: black;
+    font-size: 2.5rem;
+    text-align: right;
+}
 
 /* Resto de tus estilos para .nav-link, .nav.p-2, etc. */
 
@@ -125,10 +139,13 @@ figure::after {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
 }
 
+
+
+/* FOOTER*/
 footer {
     width: 100%;
     color: black;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     background-color: #DBF227;
     flex-direction: row; /* Cambiado a dirección de fila */
@@ -147,7 +164,7 @@ footer {
 }
 
 .menu-plans .item a {
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     margin: none;
@@ -166,12 +183,15 @@ footer {
     
 }
 
-.newsletter h3,
-.newsletter h2 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
+.newsletter h3{
+    font-size: 1rem;
+    font-style: oblique;
+    text-align: left;
 
+.newsletter h2{
+    font-size: 1.5rem;
+    font-style: inherit;
+}
 .subscribe-box {
     display: flex;
     align-items: flex-end;
@@ -193,6 +213,10 @@ footer {
 }
 
 /* Estilo para la sección de atención al cliente */
+
+.atencioncliente h6{
+    text-align: center;
+}
 .atencioncliente {
     display: flex;
     flex-direction: column;
@@ -201,6 +225,51 @@ footer {
     margin-top: auto; /* Mueve el elemento al final del contenedor flex */
     text-align: center;
     margin-top: auto;
+}
+
+
+footer {
+    position: relative;
+}
+
+.menu-plans, .newsletter, .atencioncliente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-plans {
+    left: 0;
+}
+
+.newsletter {
+    right: 0;
+}
+
+.atencioncliente {
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-plans, .newsletter, .atencioncliente {
+    flex: 1;
+    text-align: center;
+}
+
+.menu-plans {
+    text-align: left;
+}
+
+.atencioncliente h6{
+    margin-top: 20px;
+    text-align: right;
+    
 }
 
 
@@ -327,4 +396,35 @@ footer {
     font-size: 1em; /* Tamaño del párrafo */
     line-height: 1.5; /* Espaciado entre líneas del párrafo */
     margin: 0; /* Elimina el margen predeterminado para el párrafo */
+}
+
+
+/*******section posicionamiento**********/
+
+.cuadrado-home {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cuadrado-home h3 {
+    font-size: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    text-align: center;
+    max-width: 1000px; /* Ajusta el valor según tus necesidades */
+    margin-bottom: 20px;
+    display: inline-block;
+    white-space: pre-line;
+}
+
+
+.cuadrado-home a {
+    color: white;
+    display: block;
+    text-decoration: none;
 }
