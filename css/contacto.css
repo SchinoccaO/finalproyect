@@ -266,7 +266,6 @@ button:hover {
     color: red;
     text-align: center;
 }
-.text h2{
-    font-size: 25px;
+body .text h2,h3{
     color: white;
-}
+}}

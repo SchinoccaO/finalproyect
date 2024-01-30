@@ -163,6 +163,10 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
 }
 
 .menu-plans, .newsletter, .atencioncliente {
@@ -188,6 +192,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
 }
 
 .menu-plans, .newsletter, .atencioncliente {
