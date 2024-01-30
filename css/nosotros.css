@@ -159,11 +159,11 @@ footer {
 
 
 footer {
-    position: fixed;
+
     bottom: 0;
     left: 0;
     width: 100%;
-    position: fixed;
+
     bottom: 0;
     left: 0;
 
@@ -187,7 +187,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
 }
-}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -213,53 +213,29 @@ footer {
     
 }
 
-
-
-
-/* profesionales */
-
-.profesionales{
-
-    flex-direction: column;
+.profesionales {
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: white;
-
 }
 
-.profesionales h1{
-    font-size: 45px;
-    
+.profesionales div {
+    text-align: center;
+    margin: 20px;
+    border: 40px solid white;
+    padding: 20px;
+}
 }
 
-.nutricionista{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        width: 500px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-        height: auto;
-        margin-bottom: 20px;
-        background-color: transparent; /* Establece el fondo de las imágenes como transparente */
-
-}
-
-.kinesiologo.deportologo{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-
+.profesionales {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
 
-    width: 100px; /* Ajusta el tamaño de las imágenes según tus necesidades */
-    height: auto;
-    margin-bottom: 20px;
-    background-color: transparent; /* Establece el fondo de las imágenes como transparente */
-
+.profesionales img,
+.profesionales h1,
+.profesionales p {
+    margin: 10px; /* Espacio entre elementos */
 }

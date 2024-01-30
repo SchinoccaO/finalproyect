@@ -117,7 +117,8 @@ h1.m-2 {
     text-align: left; /* Alinea el texto al centro */
     display: block; /* Asegura que ocupa todo el ancho disponible */
     margin-top: 10px; /* Añade un poco de espacio arriba */
-    
+    position: relative;
+    z-index: 1;
 }
 
 .inicio::before {
