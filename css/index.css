@@ -19,17 +19,24 @@ header{
 }
 
 /* carrito de compra*/
-.shopping {    
-    position: fixed; /* Establece la posición fija */
-    top: 4; /* Lo coloca en la parte superior de la página */
-    right: 20px; /* Lo coloca a 20px del borde derecho de la ventana */
-    z-index: 9999; /* Asegura que esté encima de otros elementos */
+
+header {
+    position: relative; /* Posición relativa para que .sesion sea posicionado dentro del header */
 }
-.fa-cart-shopping{
-    color: black;
-    font-size: 2.5rem;
-    text-align: right;
+
+.sesion2 a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 1.7em;
+    font-style: normal;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    flex-direction: column-reverse;
+    
 }
+
 
 /* Resto de tus estilos para .nav-link, .nav.p-2, etc. */
 
@@ -214,9 +221,8 @@ footer {
 
 /* Estilo para la sección de atención al cliente */
 
-.atencioncliente h6{
-    text-align: center;
-}
+
+
 .atencioncliente {
     display: flex;
     flex-direction: column;
@@ -232,7 +238,7 @@ footer {
     position: relative;
 }
 
-.menu-plans, .newsletter, .atencioncliente {
+.menu-plans, .newsletter {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -249,6 +255,7 @@ footer {
 .atencioncliente {
     left: 50%;
     transform: translateX(-50%);
+    text-align: left;
 }
 }
 footer {
@@ -268,7 +275,7 @@ footer {
 
 .atencioncliente h6{
     margin-top: 20px;
-    text-align: right;
+    text-align: center;
     
 }
 
@@ -407,7 +414,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    
 }
 
 .cuadrado-home h3 {
@@ -416,10 +423,14 @@ footer {
     border: 2px solid #ffffff;
     padding: 20px;
     text-align: center;
-    max-width: 1000px; /* Ajusta el valor según tus necesidades */
     margin-bottom: 20px;
     display: inline-block;
+    align-items: stretch;
     white-space: pre-line;
+    display: flex;
+    margin-top: 100px;
+    
+
 }
 
 
