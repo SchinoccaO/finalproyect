@@ -92,6 +92,14 @@ footer {
     background-color: #DBF227;
     flex-direction: row; /* Cambiado a dirección de fila */
     justify-content: space-between; /* Alinea elementos a los extremos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    }
 }
 
 .menu-plans {
@@ -172,9 +180,6 @@ footer {
 }
 
 
-footer {
-    position: relative;
-}
 
 .menu-plans, .newsletter, .atencioncliente {
     position: absolute;
@@ -194,12 +199,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
 }
-}
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .menu-plans, .newsletter, .atencioncliente {
     flex: 1;
@@ -265,4 +265,8 @@ button:hover {
 .error-message {
     color: red;
     text-align: center;
+}
+.text h2{
+    font-size: 25px;
+    color: white;
 }

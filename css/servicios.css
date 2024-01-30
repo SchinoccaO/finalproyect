@@ -2,8 +2,8 @@ body{
     min-width: 250px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #000 !important
-    color: white;
+    background-color: #000 !important;
+
 header{
     width: 100%;
 }
@@ -18,12 +18,15 @@ header{
     margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
 }
 
-/* carrito de compra*/
 
 header {
     position: relative; /* Posición relativa para que .sesion sea posicionado dentro del header */
 }
 
+.servicios{
+    align-items: center;
+    align-self: flex-end;
+}
 .sesion2 a {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
@@ -73,78 +76,12 @@ header {
     display: inline-block;
 
 }
-h1.m-2{
+.p-2 h1, .sub{
     color: #d9e2d9;
     text-shadow: 6px 6px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto h1 (título) */
     
 }
 
-@keyframes mover {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-h1.m-2 {
-    animation: mover 5s ease-in-out;
-    animation-delay: 0.5s; 
-}
-@keyframes moverDesdeIzquierda {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.effect {
-    animation: moverDesdeIzquierda 2s ease-in-out; /* Ajusta la duración y la función de temporización según tus preferencias */
-    animation-delay: 0.5s; /* Agrega un retraso de 0.5 segundos antes de que comience la animación */
-}
-
-.m-2 {
-    white-space: pre-line;
-    font-size: 9em;
-    transition: color 0.3s ease; /* Añade transición al cambio de color */
-    text-align: left; /* Alinea el texto al centro */
-    display: block; /* Asegura que ocupa todo el ancho disponible */
-    margin-top: 10px; /* Añade un poco de espacio arriba */
-    
-}
-
-.inicio::before {
-    width: 100%;
-    background: url("../assets/pictures/homa3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .5;
-    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
-
-}
-figure::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20%; /* Ajusta la altura del difuminado según tus preferencias */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
-}
 
 
 
@@ -213,7 +150,7 @@ footer {
 }
 
 .subscribe-button {
-    padding: 8px;
+    padding: px;
     background-color: hsl(67, 89%, 55%);
     color: black;
     border: none;
@@ -280,129 +217,12 @@ footer {
     
 }
 
-.cards-servicios .card {
-    width: 25%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column; /* Ajustado a column para que el texto aparezca debajo del ícono */
-    justify-content: space-between;
-    align-items: flex-start; /* Ajustado a flex-start para alinear el contenido a la izquierda */
-    background-color: transparent;
-    border: none; /* Quita los bordes */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al texto */
-}
-
-/* Otros estilos para el contenido de la tarjeta (ajustar según sea necesario) */
-.cards-servicios .card h3 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto h3 (título) */
-    color: white;
-}
-
-.cards-servicios .card p {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Añade sombra al texto del párrafo */
-    color: white;
-}
-
-/* Otros estilos para la tarjeta según sea necesario */
-
-.cards-servicios{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    column-rule-color:white;
-}
-.saber-mas {
-    font-family: "Bebas Neue", sans-serif;
-    color: hsl(0, 0%, 100%);
-    font-size: 1.3em;
-    cursor: pointer;
-    transition: color 0.3s ease; /* Añade transición al cambio de color */
-    text-align: center; /* Alinea el texto al centro */
-    display: block; /* Asegura que ocupa todo el ancho disponible */
-    margin-top: 10px; /* Añade un poco de espacio arriba */
-}
-
-/* Cambia el color al pasar el mouse por encima */
-.saber-mas:hover {
-    color: hsl(113, 100%, 35%);
-}
-/* Estilo para posicionar a la izquierda */
-.card .saber-mas {
-    text-align: left;
-    margin-top: 0; /* Elimina el espacio arriba si es necesario */
-}
-
 
 
 /************************************************************************* section 2: clientes*****/
 
 
 
-
-/* Estilo para la sección de opiniones de clientes */
-
-.opiniones-clientes h1 {
-    color: white;
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif !important;
-}
-
-/* Estilo para la primera opinión */
-.cliente {
-    color: white;
-    width: 45%; /* Ajusta el ancho según tus preferencias */
-    margin: 20px; /* Ajusta el margen según tus preferencias */
-    box-sizing: border-box;
-    float: left; /* Hace que el elemento flote a la izquierda */
-    font-style: italic
-}
-
-.cliente h3 {
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    
-}
-
-.cliente p {
-    color: white;
-    width: 100%; /* Ajusta el ancho según tus preferencias */
-    margin: 20px; /* Ajusta el margen según tus preferencias */
-    box-sizing: border-box;
-    float: left; /* Hace que el elemento flote a la izquierda */
-    font-style: italic;
-}
-
-/* Estilo para la segunda opinión */
-.cliente-izq {
-    color: rgb(255, 255, 255);
-    width: 45%; /* Ajusta el ancho según tus preferencias */
-    margin: 20px; /* Ajusta el margen según tus preferencias */
-    box-sizing: border-box;
-    float: right; /* Hace que el elemento flote a la derecha */
-    font-style: italic;
-}
-
-.cliente-izq h3 {
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-}
-
-.cliente-izq p {
-    color: white;
-    width: 100%; /* Ajusta el ancho según tus preferencias */
-    margin: 20px; /* Ajusta el margen según tus preferencias */
-    box-sizing: border-box;
-    float: right; /* Hace que el elemento flote a la derecha */
-    font-style: italic;
-}
-
-
-.cliente p,
-.cliente-izq p {
-    font-size: 1em; /* Tamaño del párrafo */
-    line-height: 1.5; /* Espaciado entre líneas del párrafo */
-    margin: 0; /* Elimina el margen predeterminado para el párrafo */
-}
 
 
 /*******section posicionamiento**********/
@@ -415,7 +235,9 @@ footer {
     align-items: center;
     
 }
-
+.btn-info {
+    color: #000;
+}
 .cuadrado-home h3 {
     font-size: 30px;
     box-sizing: border-box;
@@ -424,15 +246,18 @@ footer {
     text-align: center;
     margin-bottom: 20px;
     display: inline-block;
-    align-items: stretch;
     white-space: pre-line;
-    display: flex;
-    margin-top: 100px;
     
 
 }
+.servicios.table {
+    background-color: transparent !important;
+}
 
-
+.container p-2{
+    text-align: center;
+    align-items: center;
+}
 .cuadrado-home a {
     color: white;
     display: block;
@@ -440,16 +265,23 @@ footer {
 }
 }
 
+.servicios h2{
+    color: white;
+    text-align: center;
+}
 
-
-h3, h4 {
+h2, h4 {
     margin: 12px;
+    color: rgb(94, 255, 0);
 }
 
 .product-container{
     display: flex;
+    align-items: end;
 }
-
+body .p-2{
+    font-size:25px ;
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -459,17 +291,26 @@ h3, h4 {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+.card button{
+    background-color: #d4f227;
+    border: 1px solid black;
+}
+.card a{
+    color: black;
 }
 .card:nth-child(2){
-    border: 1px solid #0dcaf0;
+    border: 1px solid rgba(94, 255, 0, 0.747);;
     transition: .3s;
 }
 .card:hover{
-    border: 1px solid green;
+    border: 1px solid rgba(94, 255, 0, 0.473);;
 }
 .card:hover > button{
-    background-color:green;
-    border: 1px solid green;
+    background-color:rgba(0, 255, 21, 0.644);;
+    border: 1px solid rgb(94, 255, 0);;
 }
 .card h4{
     font-size: 28px;
@@ -479,7 +320,6 @@ button a{
     color: #fff;
 }
 td{
-
     text-align: center;
 }
 
@@ -503,4 +343,25 @@ button {
     padding: 15px;
     margin-top: 12px;
     width: max-content;
+}
+}
+
+td{
+    background-color: transparent;
+}
+.fa-solid, .fas {
+    color: green;
+}
+.servicios .table-bordered {
+    background-color: none; /* Establece el fondo como transparente */
+}
+.card:nth-child(2){
+    border: #000 
+}
+
+.sub p {
+    /* Estilos que deseas aplicar al párrafo después del elemento con la clase .sub */
+    /* Por ejemplo: */
+    color: red;
+    font-size: 18px;
 }
