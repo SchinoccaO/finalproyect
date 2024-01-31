@@ -209,7 +209,7 @@ img{
 .profesionales .depor {
     flex-basis: calc(33.33% - 20px); /* Establece el ancho de cada elemento al 33.33% del contenedor, con un espacio de 20px entre ellos */
     margin: 10px; /* Espacio entre los elementos */
-    text-align: center; /* Alinea el texto al centro */
+    text-align: right; /* Alinea el texto al centro */
 }
 
 .profesionales img {
@@ -217,11 +217,36 @@ img{
     border: 10px groove black; /* Define el borde de la imagen */
 }
 
+
+
 .profesionales h1,
 .profesionales p {
     color: white; /* Color del texto */
 }
 
+
+.grupo2{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grupo p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .grupo{
     flex-direction: column;
+}
+.grupo2 h1{
+    font-size: 40px;
+}
+.grupo2 p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grupo{
+    flex-direction: column;
+    width: 200px;
+}
+.grupo2 h1{
+    font-size: 40px;
 }
