@@ -176,8 +176,8 @@ footer {
 
 
 img{
-    margin-top: 100px;
-    margin-left: 500px !important;
+    margin-top: 50px;
+    margin-left: 100px !important;
     border: 5px solid  hsl(67, 89%, 55%)!important; /* Define un borde sólido de 2px de grosor en color negro */
     align-items: center;
     flex: content;
@@ -194,7 +194,6 @@ img{
 .profesionales div{
     text-align: right;
     color: white;
-    margin-left: 10px; /* Espacio entre la imagen y el texto */
     flex-direction: row; /* Establece la dirección del contenido como fila */
 
 }
@@ -227,7 +226,7 @@ img{
 
 .grupo2{
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .grupo p{
     font-size: 20px;
@@ -238,6 +237,8 @@ img{
 }
 .grupo2 h1{
     font-size: 40px;
+    justify-content: end
+    ;
 }
 .grupo2 p{
     font-size: 20px;
@@ -245,7 +246,6 @@ img{
 }
 .grupo{
     flex-direction: column;
-    width: 200px;
 }
 .grupo2 h1{
     font-size: 40px;
