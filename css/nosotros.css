@@ -1,12 +1,14 @@
-body{
+body {
     min-width: 250px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #000 !important
+    background-color: #000 !important;
 }
-header{
+
+header {
     width: 100%;
 }
+
 .fa-heart-pulse {
     color: black; /* Cambia "red" al color que desees */
 }
@@ -18,28 +20,27 @@ header{
     margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
 }
 
-/* carrito de compra*/
+/* carrito de compra */
 .shopping {    
     position: fixed; /* Establece la posición fija */
     top: 4; /* Lo coloca en la parte superior de la página */
     right: 20px; /* Lo coloca a 20px del borde derecho de la ventana */
     z-index: 9999; /* Asegura que esté encima de otros elementos */
 }
-.fa-cart-shopping{
+
+.fa-cart-shopping {
     color: black;
     font-size: 2.5rem;
     text-align: right;
 }
 
-
 /* Resto de tus estilos para .nav-link, .nav.p-2, etc. */
 
-    
-.main{
+.main {
     background-color: #000;
 }
-/* MENU*/
 
+/* MENU */
 
 .nav-link {
     font-family: "Bebas Neue", sans-serif;
@@ -67,9 +68,8 @@ header{
     display: inline-block;
 }
 
+/* FOOTER */
 
-
-/* FOOTER*/
 footer {
     width: 100%;
     color: black;
@@ -78,12 +78,13 @@ footer {
     background-color: #DBF227;
     flex-direction: row; /* Cambiado a dirección de fila */
     justify-content: space-between; /* Alinea elementos a los extremos */
+    bottom: 0;
+    left: 0;
 }
 
 .menu-plans {
     display: flex;
     align-items: center; /* Alinea verticalmente al centro */
-
 }
 
 .menu-plans .item {
@@ -107,19 +108,19 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center; /* Alinea verticalmente al centro */
-
-    
 }
 
-.newsletter h3{
+.newsletter h3 {
     font-size: 1rem;
     font-style: oblique;
     text-align: left;
+}
 
-.newsletter h2{
+.newsletter h2 {
     font-size: 1.5rem;
     font-style: inherit;
 }
+
 .subscribe-box {
     display: flex;
     align-items: flex-end;
@@ -142,7 +143,7 @@ footer {
 
 /* Estilo para la sección de atención al cliente */
 
-.atencioncliente h6{
+.atencioncliente h6 {
     text-align: center;
     margin-top: 10px;
 }
@@ -157,85 +158,70 @@ footer {
     margin-top: auto;
 }
 
-
-footer {
-
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
-    bottom: 0;
-    left: 0;
-
-}
-
-.menu-plans, .newsletter, .atencioncliente {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.menu-plans {
-    left: 0;
-}
-
-.newsletter {
-    right: 0;
-}
-
-.atencioncliente {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-}
-
-.menu-plans, .newsletter, .atencioncliente {
-    flex: 1;
-    text-align: center;
-}
-
-.menu-plans {
-    text-align: left;
-}
-
-.atencioncliente h6{
-    margin-top: 20px;
-    text-align: center;
-    
-}
-
 .profesionales {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profesionales div {
-    text-align: center;
-    margin: 20px;
-    border: 40px solid white;
-    padding: 20px;
-}
-}
+
 
 .profesionales {
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     text-align: center;
+    
 }
 
-.profesionales img,
+
+img{
+    margin-top: 100px;
+    margin-left: 500px !important;
+    border: 5px solid  hsl(67, 89%, 55%)!important; /* Define un borde sólido de 2px de grosor en color negro */
+    align-items: center;
+    flex: content;
+    width: 550px;
+}
+
+
+#deportologos{
+    align-items:center ;
+    margin-left: 540px !important;
+    width: 580px;
+}
+
+.profesionales div{
+    text-align: right;
+    color: white;
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+    flex-direction: row; /* Establece la dirección del contenido como fila */
+
+}
+.profesionales {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: row;
+}
+
+.profesionales .nutri,
+.profesionales .kine,
+.profesionales .depor {
+    flex-basis: calc(33.33% - 20px); /* Establece el ancho de cada elemento al 33.33% del contenedor, con un espacio de 20px entre ellos */
+    margin: 10px; /* Espacio entre los elementos */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.profesionales img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que no se desborde del contenedor */
+    border: 10px groove black; /* Define el borde de la imagen */
+}
+
 .profesionales h1,
 .profesionales p {
-    margin: 10px; /* Espacio entre elementos */
+    color: white; /* Color del texto */
+}
+
+.grupo{
+    flex-direction: column;
 }

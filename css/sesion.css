@@ -177,6 +177,7 @@ header{
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
+    justify-content: flex-start;
 }
 
 footer {
@@ -186,14 +187,18 @@ footer {
     background-color: #DBF227;
     display: flex;
     flex-direction: row; /* Cambiado a dirección de fila */
-    justify-content: space-between; /* Alinea elementos a los extremos */
+    justify-content: space-between !important; /* Alinea elementos a los extremos */
     align-items: center;
     position: fixed;
     bottom: 0;
     left: 0; /* No olvides cerrar bien el bloque */
 }
 
-
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .menu-plans, .newsletter, .atencioncliente {
     flex: 1;
     text-align: center;
@@ -210,8 +215,11 @@ footer {
 }
 
 
+
+
 h2 {
-    text-align: center;
+    text-align: right;
+    margin-top: 50px;
 }
 
 form {
@@ -220,27 +228,28 @@ form {
 }
 
 label {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    align-items: center;
 }
 
-input {
+input#datoinput1{
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    margin-bottom: 40px;
+    border: 4px solid #000000;
     border-radius: 5px;
+    color: black;
 }
-
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 5px 10px;
+    background-color: #DBF227;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #42b300;
 }
 
 .error-message {
@@ -248,18 +257,27 @@ button:hover {
     text-align: center;
 }
 
-.container h2{
-    color: white;
-    font-size: 35px;
-    margin-top: 30px;
-}
+.text h2,
 .text h3 {
     color: white !important;
-    font-size: 20px;
-    text-align: center;
-
 }
 
-.form{
+.login-form{
+    align-items: center;
+    justify-content: center
+}
+
+.login-form h2{
     color: white;
-}  
+    margin-top: 20px;
+}
+.form-group{
+    color: white;
+}
+.form-label{
+    color: white;
+}
+
+.datoInput1{
+    align-items: flex-end;
+}
